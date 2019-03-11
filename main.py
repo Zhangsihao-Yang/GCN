@@ -88,4 +88,7 @@ for iter in range(NUM_ITERATIONS):
 	train_step.run(feed_dict={x:input, adj:train_adj})
 	loss = mse_loss.eval(feed_dict={x:input, adj:train_adj})
 	print('For iter {}, the loss is: {}'.format(iter, loss))
+# To save the generated point and visualize it in meshlab
+
+
 
